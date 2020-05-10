@@ -13,9 +13,9 @@ agent any
         sh 'mvn compile'
       }
     }
-    stage('Test') {
+    stage('Build jar file') {
       steps {
-        sh 'mvn test'
+        sh 'mvn install -DskipTests'
       }
 	}
     stage('Building docker image with jar file'){
