@@ -4,7 +4,7 @@ package calc;
  * Hello world!
  *
  */
-public class App 
+public class Calculator_devops
 {
     public static void main( String[] args )
     {
