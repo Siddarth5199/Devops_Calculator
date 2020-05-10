@@ -22,7 +22,18 @@ agent any
      steps{
       sh 'docker build -t siddarthdesu/test_devops .'
      }
-     }  
+     }
+    stage('Upload docker image to DockerHub')
+ 		{
+ 		    steps
+ 		    {
+ 	        	withDockerRegistry([ credentialsId: "Siddarthdesu_dockerhub", url: "" ])
+ 	        	{
+ 	        		sh 'docker push siddarthdesu/test_devops'
+
+ 	      		}
+ 		    }
+ 		}
     }
   }
 
