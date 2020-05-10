@@ -45,7 +45,7 @@ agent any
           options: """
             BUILD_VERSION=$BUILD_NUMBER
           """,
-          jobId: " e14811ea-3940-4d76-ac0e-aa476ed4290b "])
+          jobId: "e14811ea-3940-4d76-ac0e-aa476ed4290b"])
         }
       }
     }
